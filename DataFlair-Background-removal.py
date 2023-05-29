@@ -38,7 +38,7 @@ while cap.isOpened():
 
     # it returns true or false where the condition applies in the mask
     condition = np.stack(
-      (results.segmentation_mask,) * 3, axis=-1) > 0.4
+      (results.segmentation_mask,) * 3, axis=-1) > 0.6
 
     # resize the background image to the same size of the original frame
     bg_image = cv2.resize(bg_image, (width, height))
